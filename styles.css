@@ -1,0 +1,47 @@
+@keyframes spin {
+    from {
+        transform:rotate(-8deg);
+    }
+    to {
+        transform:rotate(8deg);
+    }
+}
+body{
+/*   background-color:green; */
+  font-family:mainFont;
+  border-size:20px;
+  border-color:#288a28;
+  border-style:groove;
+  padding:25px;
+  border-radius:5px;
+  background-image:url("th.jpg");
+}
+
+
+h1 {
+  animation-name: spin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+   font-family:mainFont;
+   font-size:0.7in;
+}
+h2 {
+  font-family:mainFont;
+  font-size:0.55in;
+}
+p{
+  font-family:mainFont;
+  font-size:26px;
+}
+
+@font-face {
+  font-family:mainFont;
+  src:url(kingdom-main-v1.ttf);
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
